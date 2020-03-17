@@ -11,29 +11,16 @@ set autoindent
 set hidden
 
 set tabstop =4
-set shiftwidth =
+set shiftwidth =4
 set softtabstop=4
 set smartindent
 set list listchars=tab:>-,trail:_,nbsp:%
-
-"swapfile
-set directory=$HOME/.vimswap
-au BufWritePre * let &bex = '.' .strftime("%Y%m%d %H%M%S")
-"backupfile
-set backup
-set writebackup
-set backupdir=$HOME/.vimbackup
-au BufWritePre * let &bex = '.' .strftime("%Y%m%d %H%M%S")
-"undofile 
-set undodir=$HOME/. vimundo
-au BufWritePre * let &bex = '.' .strftime("%Y%m%d %H%M%S")
 
 "Search Highlight on/off
 nnoremap <silent><Esc><Esc> :<C-u>set nohlsearch!<CR>
 
 "Insert Row
 nnoremap O o<Esc>
-
 nnoremap sh <C-w>h
 nnoremap sj <C-w>j
 nnoremap sk <C-w>k
